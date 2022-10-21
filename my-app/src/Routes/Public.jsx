@@ -8,7 +8,8 @@ function Public(){
     return (
        
               <Routes>
-                <Route path="/" element={<Home />}/>                     
+                <Route path="/" element={<Home />}/>  
+                <Route path="/:user" element={<Home />}/>                    
                 <Route path="/login" element={<Login />}/>
                 <Route path="/productos" element={<CointainaerProductos />}/>           
                 <Route path="/registro" element={<ContainerClass />}/>

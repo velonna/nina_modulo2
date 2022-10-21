@@ -8,7 +8,7 @@ class InputClass extends Component{
             <>
                 <div className="col-md-9">
                     <label className="form-label">{this.props.title}</label>
-                    <input type={this.props.type_input} className="form-control" id={this.props.name_for} placeholder={this.props.placeholder} value={this.props.value_input}/>
+                    <input onChange={this.props.onChange} type={this.props.type_input} className="form-control" id={this.props.name_for} placeholder={this.props.placeholder} value={this.props.value_input}/>
                     <ValidClass type_valid= "valid-feedback" text_valid={this.props.text_valid} />
                 </div>
             </>

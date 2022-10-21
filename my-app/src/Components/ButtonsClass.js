@@ -24,11 +24,13 @@ function ButtonsClass( object){
             }
         },
         [accion]);
-  
+    function onchange(){
+        setTexto(text);
+    }
     return(
         <>
             
-            <button className={classname} type={type} onClick={()=>setTexto(text)}>{titulo}</button>
+            <button className={classname} type={type} onClick={onchange}>{titulo}</button>
            
             <div>
             <p> {texto}</p>

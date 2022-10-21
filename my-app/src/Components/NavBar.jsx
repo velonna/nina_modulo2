@@ -1,7 +1,8 @@
-
+import { ForwardedRef, forwardRef, useRef } from 'react';
 import { Link, } from 'react-router-dom';
 
-function NavBar(){
+export function NavBar(props,ref){
+   console.log(ref);
     return(
       
        
@@ -62,12 +63,12 @@ function NavBar(){
                     </div>
              
                 </nav>
-              
+                <div>{ref}</div>
             </div>
           
     
         
     );
 }
-export default NavBar
+export default forwardRef(NavBar)
 
