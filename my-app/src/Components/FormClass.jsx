@@ -64,7 +64,7 @@ export default function FormClass(){
                    
                    <div className="d-grid gap-2 col-6 mx-auto">
                     <div></div>
-                    <ButtonsClass typ='submit' clas= "btn btn-primary"  titu="Registrar" accion= "aceptar" message="Gracias por su compra!"></ButtonsClass>
+                    <ButtonsClass link={'/productos'} typ='submit' clas= "btn btn-primary"  titu="Registrar" accion= "aceptar" message="Gracias por su compra!"></ButtonsClass>
                     </div>
                     
                 </form>

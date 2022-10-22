@@ -1,9 +1,9 @@
 
-import { useRef } from "react";
+
 import InputClass from "../Components/InputClass";
 import ButtonsClass from "../Components/ButtonsClass";
 function Login(){
-    const linkref = useRef("home");
+   
     let stylesBtnFb = { background: "#3b5998" };
     let stylesBtnTw = { background: "#55acee" };
     const handleSubmit =(e)=>{
@@ -42,7 +42,7 @@ function Login(){
                             </div>
                             <a href="#!">Forgot password?</a>
                         </div>
-                        <ButtonsClass ref={linkref} typ='submit' clas= "btn btn-primary"  titu="Sign in" accion = "submit" message="Ya estas adentro!"></ButtonsClass>
+                        <ButtonsClass link={'/'} typ='submit' clas= "btn btn-primary"  titu="Sign in" accion = "submit" message="Ya estas adentro!"></ButtonsClass>
                       
                         <div className="divider d-flex align-items-center my-4">
                             <p className="text-center fw-bold mx-3 mb-0 text-muted">OR</p>

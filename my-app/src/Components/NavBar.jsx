@@ -1,8 +1,9 @@
-import { ForwardedRef, forwardRef, useRef } from 'react';
+import { forwardRef } from 'react';
 import { Link, } from 'react-router-dom';
 
 export function NavBar(props,ref){
    console.log(ref);
+   console.log(props);
     return(
       
        
@@ -41,8 +42,8 @@ export function NavBar(props,ref){
                         </Link>
                         </li>
                         <li className="nav-item">
-                        <Link className="nav-link" to="/registro">
-                        <i className="fas fa-shopping-cart">Registro</i>
+                        <Link className="nav-link" to="/registroProducto">
+                        <i className="fas fa-shopping-cart">Agregar</i>
                         </Link>
                         </li>
                         </ul>

@@ -12,7 +12,7 @@ function Public(){
                 <Route path="/:user" element={<Home />}/>                    
                 <Route path="/login" element={<Login />}/>
                 <Route path="/productos" element={<CointainaerProductos />}/>           
-                <Route path="/registro" element={<ContainerClass />}/>
+                <Route path="/registroProducto" element={<ContainerClass />}/>
                 <Route path="/detalleForm" element={<DetalleForm />}/>
                 <Route path="*" element={<Login/>}/>
             </Routes>

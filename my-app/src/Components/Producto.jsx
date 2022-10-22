@@ -1,5 +1,5 @@
 import React,{useEffect} from "react"
-
+import ButtonsClass from "./ButtonsClass"
 function Producto({
   id,
   category,
@@ -20,7 +20,10 @@ function Producto({
        <th scope="row">{id}</th>
         <td>{category}</td>
         <td>{price}</td>
-        <td><button type="button" className="btn btn-outline-info">Ver Detalle</button></td>
+        <td>
+        <ButtonsClass link={'/detalleForm'} typ='button' clas= "btn btn-outline-info"  titu="Ver Detalle" accion= "aceptar" message="Gracias por su compra!"></ButtonsClass>
+       
+          </td>
       </tr>
       </>
   )

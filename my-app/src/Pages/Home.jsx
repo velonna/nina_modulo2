@@ -10,9 +10,9 @@ function Home(){
         <>
               
             <div className='App-home'>
-                <div className="container">
-                    <div className="wrapper" >
-                        <div className="inner">
+                <div className="container text-center">
+                    <div className="row" >
+                        <div className="col-sm-5 col-md-6 inner">
                             <form onSubmit={handleSubmit(onSubmit)}>
                             
                                 <h2 >Formulario de registro</h2>
@@ -46,6 +46,13 @@ function Home(){
                                                   
                             </form>
                         </div>
+                        <div className="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+                        <div className='label-fomBlack'>
+                            <h2>Nosotros</h2>
+                            <p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
