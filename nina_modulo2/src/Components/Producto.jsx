@@ -21,7 +21,7 @@ function Producto({
         <td>{category}</td>
         <td>{price}</td>
         <td>
-        <ButtonsClass link={'/detalleForm'} typ='button' clas= "btn btn-outline-info"  titu="Ver Detalle" accion= "aceptar" message="Gracias por su compra!"></ButtonsClass>
+        <ButtonsClass link={'/detalleForm'} typ='button' clas= "primary"  titu="Ver Detalle" accion= "aceptar" message="Gracias por su compra!"></ButtonsClass>
        
           </td>
       </tr>

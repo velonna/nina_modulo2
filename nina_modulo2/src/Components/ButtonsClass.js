@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import { Link, } from 'react-router-dom';
+import { Button } from "@mui/material";
 
 function ButtonsClass( object){
     const [texto,setTexto] = useState('');
@@ -32,7 +33,8 @@ function ButtonsClass( object){
     return(
         <>
             <Link to={linkRoute}>
-            <button className={classname} type={type} onClick={onchange}>{titulo}</button></Link>
+            <Button variant="contained" color={classname} type={type} onClick={onchange} >{titulo}</Button></Link>
+          
            
             <div>
             <p> {texto}</p>

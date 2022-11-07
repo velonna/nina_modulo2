@@ -2,6 +2,8 @@
 
 import InputClass from "../Components/InputClass";
 import ButtonsClass from "../Components/ButtonsClass";
+import firebase from '../Config/firebase';
+
 function Login(){
    
     let stylesBtnFb = { background: "#3b5998" };
@@ -11,6 +13,7 @@ function Login(){
         e.preventDefault();
        
       }
+    console.log(firebase);
     return(
         <>
           
@@ -42,10 +45,11 @@ function Login(){
                             </div>
                             <a href="#!">Forgot password?</a>
                         </div>
-                        <ButtonsClass link={'/'} typ='submit' clas= "btn btn-primary"  titu="Sign in" accion = "submit" message="Ya estas adentro!"></ButtonsClass>
+                        <ButtonsClass link={'/'} typ='submit' clas= "primary"  titu="Sign in" accion = "submit" message="Ya estas adentro!"></ButtonsClass>
                       
                         <div className="divider d-flex align-items-center my-4">
                             <p className="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
+                          
                         </div>
 
                         <a className="btn btn-primary btn-lg btn-block" style={stylesBtnFb} href="#!"
